@@ -23,8 +23,9 @@
         }
 
         .mac-window {
-            width: 900px;
-            height: 600px;
+    width: 900px;
+    height: auto;      /* <<< ini kuncinya */
+    min-height: 100vh;
             background: rgba(255, 255, 255, 0.85);
             border-radius: 14px;
             box-shadow: 
@@ -37,6 +38,23 @@
             overflow: hidden;
             border: 1px solid rgba(255, 255, 255, 0.5);
         }
+
+       @media (max-width: 600px) {
+    .mac-window {
+        height: auto !important;
+        min-height: auto !important;
+    }
+
+    .window-content {
+        flex: unset !important;     /* <<< ini yang paling penting */
+        height: auto !important;
+    }
+
+    .content-area {
+        height: auto !important;
+    }
+}
+
 
         .window-header {
             height: 50px;
