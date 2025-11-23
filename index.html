@@ -459,10 +459,41 @@
     margin: 0 auto;
 }
 
+/* Default untuk PC */
+.main-wrapper {
+    width: 1200px;    /* ukuran layout ideal */
+    margin: 0 auto;
+}
+
+/* Untuk HP (lebar < 768px) */
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden; /* biar tidak geser ke samping */
+    }
+
+    .main-wrapper {
+        transform: scale(1.7);      /* sesuaikan besar kecilnya */
+        transform-origin: top center;
+        width: 1200px;
+    }
+}
+
+/* Untuk HP kecil banget */
+@media (max-width: 480px) {
+    .main-wrapper {
+        transform: scale(2);        /* lebih besar lagi */
+        transform-origin: top center;
+    }
+}
+
 
     </style>
 </head>
 <body>
+    <div class="main-wrapper">
+
+</div>
+
     <div id="popup-blur"></div>
     <div class="mac-window">
         <div class="window-header">
