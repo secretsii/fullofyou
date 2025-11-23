@@ -488,43 +488,23 @@
         .icon-heart {
             background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='%23ff9eb4' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z'%3E%3C/path%3E%3C/svg%3E");
         }
+/* JANGAN pakai width fix */
 
-        body, html {
-    width: 1280px;   /* ukuran tampilan PC */
-    overflow-x: auto;  /* biar bisa geser kanan kalau HP kecil */
-}
-
-.container {
-    width: 1280px;
-    margin: 0 auto;
-}
-
-/* Default untuk PC */
+/* Layout tetap tengah dan responsif */
 .main-wrapper {
-    width: 1200px;    /* ukuran layout ideal */
+    max-width: 900px;   /* ukuran mac-window kamu */
+    width: 100%;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
 }
 
-/* Untuk HP (lebar < 768px) */
-@media (max-width: 768px) {
-    body {
-        overflow-x: hidden; /* biar tidak geser ke samping */
-    }
-
-    .main-wrapper {
-        transform: scale(1.7);      /* sesuaikan besar kecilnya */
-        transform-origin: top center;
-        width: 1200px;
-    }
+/* Biar mac-window tidak mengecil di HP */
+.mac-window {
+    width: 900px;
+    max-width: 100%; /* biar aman kalau layar kecil */
 }
 
-/* Untuk HP kecil banget */
-@media (max-width: 480px) {
-    .main-wrapper {
-        transform: scale(2);        /* lebih besar lagi */
-        transform-origin: top center;
-    }
-}
 
 
     </style>
