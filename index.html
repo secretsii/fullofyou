@@ -310,6 +310,56 @@
     }
 }
 
+/* FULLSCREEN POPUP — FIX KONTEN KEPOTONG */
+@media (max-width: 600px) {
+
+    .content-overlay {
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        min-height: 100vh !important;
+        height: auto !important;
+        transform: none !important;
+        background: white !important;
+        border-radius: 0 !important;
+        padding: 20px !important;
+        overflow: visible !important;
+        z-index: 999 !important;
+    }
+
+    /* Hapus HAMBATAN height dari semua parent */
+    .mac-window,
+    .window-content,
+    .content-area {
+        height: auto !important;
+        min-height: auto !important;
+        max-height: none !important;
+        overflow: visible !important;
+        flex: unset !important;   /* ini penting */
+    }
+
+    /* Biar konten di dalam overlay tidak memotong */
+    .overlay-header {
+        margin-bottom: 20px !important;
+    }
+
+    .typewriter-container,
+    .typewriter-text,
+    .gallery-container,
+    .love-list {
+        height: auto !important;
+        max-height: none !important;
+        overflow: visible !important;
+    }
+
+    /* Hapus min-height dari body biar tidak maksa */
+    body {
+        min-height: auto !important;
+    }
+}
+
+
 
 
         .overlay-header {
