@@ -27,7 +27,7 @@
     height: auto;      /* <<< ini kuncinya */
     min-height: 100vh;
             background: rgba(255, 255, 255, 0.85);
-            border-radius: 14px;
+            border-radius: 8px;
             box-shadow: 
                 0 10px 30px rgba(0, 0, 0, 0.08),
                 0 6px 10px rgba(0, 0, 0, 0.05),
@@ -57,10 +57,10 @@
 
 
         .window-header {
-            height: 50px;
+            height: 35px;
             display: flex;
             align-items: center;
-            padding: 0 20px;
+            padding: 0 10px;
             background: rgba(255, 255, 255, 0.7);
             border-bottom: 1px solid rgba(0, 0, 0, 0.05);
         }
@@ -71,8 +71,8 @@
         }
 
         .traffic-light {
-            width: 12px;
-            height: 12px;
+            width: 10px;
+            height: 10px;
             border-radius: 50%;
         }
 
@@ -218,14 +218,14 @@
         }
 
         .folder-icon {
-    width: 100px;
-    height: 70px;
-    background: linear-gradient(135deg, #ffb7c5 0%, #ff9eb4 100%);
+    width: 80px;
+    height: 60px;
+    background: linear-gradient(135deg, #ffb7b7 0%, #ff9eb4 100%);
     border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
     position: relative;
 }
 
@@ -238,7 +238,7 @@
     width: 45px;
     height: 14px;
     background: linear-gradient(135deg, #ffb7c5 0%, #ff9eb4 100%);
-    border-radius: 6px 6px 2px 2px;
+    border-radius: 4px 4px 1px 1px;
 }
 
 
@@ -391,7 +391,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 4px;
 }
 
 
@@ -613,7 +613,7 @@
                     <div class="sidebar-title">Favorites</div>
                     <div class="sidebar-item active">
                         <div class="sidebar-icon icon icon-airdrop"></div>
-                        <span>Airdrop</span>
+                        <span>Share</span>
                     </div>
                     <div class="sidebar-item">
                         <div class="sidebar-icon icon icon-recents"></div>
@@ -625,16 +625,16 @@
                     </div>
                     <div class="sidebar-item">
                         <div class="sidebar-icon icon icon-icloud"></div>
-                        <span>iCloud</span>
+                        <span>Heartbeat</span>
                     </div>
                     <div class="sidebar-item">
                         <div class="sidebar-icon icon icon-books"></div>
-                        <span>Books</span>
+                        <span>Library</span>
                     </div>
                 </div>
                 
                 <div class="sidebar-section">
-                    <div class="sidebar-title">iCloud</div>
+                    <div class="sidebar-title">Set Up</div>
                     <div class="sidebar-item">
                         <div class="sidebar-icon icon icon-downloads"></div>
                         <span>Downloads</span>
@@ -645,7 +645,7 @@
                     </div>
                     <div class="sidebar-item">
                         <div class="sidebar-icon icon icon-safari"></div>
-                        <span>Safari</span>
+                        <span>Deleted</span>
                     </div>
                 </div>
             </div>
@@ -653,7 +653,7 @@
             <div class="content-area">
                 <div class="content-header">
                     <div class="content-titles">
-                        <h2>Feli</h2>
+                        <h2>Myasa's</h2>
                         <h1>Recent</h1>
                     </div>
                     
@@ -669,7 +669,7 @@
                             <div class="icon icon-folder"></div>
                         </div>
                         <div class="folder-content">
-                            <div class="folder-name">Cerita Kita</div>
+                            <div class="folder-name">love note</div>
                         </div>
                     </div>
                     
@@ -678,7 +678,7 @@
                             <div class="icon icon-folder"></div>
                         </div>
                         <div class="folder-content">
-                            <div class="folder-name">Memori</div>
+                            <div class="folder-name">snapshots</div>
                         </div>
                     </div>
                     
@@ -687,7 +687,7 @@
                             <div class="icon icon-folder"></div>
                         </div>
                         <div class="folder-content">
-                            <div class="folder-name">Reason Why I Love You</div>
+                            <div class="folder-name">notes about you</div>
                         </div>
                     </div>
                 </div>
@@ -696,7 +696,7 @@
                 <!-- Cerita Kita Content -->
 <div id="cerita-content" class="content-overlay">
     <div class="overlay-header">
-        <div class="overlay-title">Cerita Kita</div>
+        <div class="overlay-title">love note</div>
         <div class="close-btn icon icon-close" onclick="hideContent('cerita')"></div>
     </div>
 
@@ -710,7 +710,7 @@
                 <!-- Memori Content -->
                 <div id="memori-content" class="content-overlay">
                     <div class="overlay-header">
-                        <div class="overlay-title">Memori</div>
+                        <div class="overlay-title">snapshoots</div>
                         <div class="close-btn icon icon-close" onclick="hideContent('memori')"></div>
                     </div>
                     <div class="gallery-container">
@@ -741,13 +741,13 @@
 
 </div>
 
-                    <p style="color: #666; font-size: 14px; text-align: center;">Our precious memories together, each one a treasure in my heart.</p>
+                    <p style="color: #666; font-size: 14px; text-align: center;">our precious memories together, each one a treasure in my heart.</p>
                 </div>
                 
                 <!-- Love List Content -->
                 <div id="love-content" class="content-overlay">
                     <div class="overlay-header">
-                        <div class="overlay-title">Reason Why I Love You</div>
+                        <div class="overlay-title">notes about you</div>
                         <div class="close-btn icon icon-close" onclick="hideContent('love')"></div>
                     </div>
                     <ul class="love-list">
@@ -760,7 +760,7 @@
                         <li>Your gentle spirit that brings peace to my soul</li>
                         <li>The way you make me want to be a better person</li>
                     </ul>
-                    <p style="color: #666; font-size: 12px; text-align: center; margin-top: 20px;">And so many more reasons that would fill countless pages...</p>
+                    <p style="color: #666; font-size: 12px; text-align: center; margin-top: 20px;">and so many more reasons that would fill countless pages.</p>
                 </div>
             </div>
         </div>
@@ -770,21 +770,27 @@
     <script>
        function startTypewriter() {
     const textElement = document.getElementById('typewriter-text');
-    const text = ` in ways I never imagined possible. Your smile brightens even my darkest days, and your laughter is the sweetest melody my heart has ever known.\n\nEvery memory we've created together is a treasure I hold close. From our simple coffee dates to our adventures exploring new places, each moment with you feels like a page from the most beautiful story ever written.\n\nYou are my greatest love, my safest harbor, and my most beautiful dream come true.\n\nForever yours,\n[Your Name]`;
 
-    textElement.innerHTML = '';
+    // STOP typewriter lama
+    if (typewriterTimeout) clearTimeout(typewriterTimeout);
+
+    textElement.innerHTML = '';   // reset 100%
+    typewriterRunning = true;
+
+    const text = `dear, galiard
+i just wanted to send you a tiny note today nothing big, nothing dramatic just a soft reminder that you mean so much to me. every little moment with you feels warm, gentle, and right. thank you for being the calm in my days and the smile in my nights.
+
+with all my heart, myasa`;
     let i = 0;
     const speed = 30;
 
     function typeWriter() {
+        if (!typewriterRunning) return;   // kalau overlay ditutup → stop
+
         if (i < text.length) {
-            if (text.charAt(i) === '\n') {
-                textElement.innerHTML += '<br>';
-            } else {
-                textElement.innerHTML += text.charAt(i);
-            }
+            textElement.innerHTML += text[i] === '\n' ? '<br>' : text[i];
             i++;
-            setTimeout(typeWriter, speed);
+            typewriterTimeout = setTimeout(typeWriter, speed);
         } else {
             textElement.innerHTML += `<span class="cursor"></span>`;
         }
@@ -792,7 +798,11 @@
 
     typeWriter();
 }
+
         
+        let typewriterRunning = false;
+let typewriterTimeout = null;
+
         
         // Initialize with typewriter ready
         document.addEventListener('DOMContentLoaded', function() {
@@ -814,25 +824,19 @@
    }
 
    function hideContent(type) {
-       const overlay = document.getElementById(`${type}-content`);
-       overlay.style.display = 'none';
-   }
+    const overlay = document.getElementById(`${type}-content`);
+    overlay.style.display = 'none';
 
-   document.querySelectorAll('.sidebar-item').forEach(item => {
-    item.addEventListener('click', () => {
+    if (type === 'cerita') {
+        typewriterRunning = false;
+        document.getElementById('typewriter-text').innerHTML = '';
+    }
+}
 
-        // Hapus active di semua item
-        document.querySelectorAll('.sidebar-item').forEach(i => {
-            i.classList.remove('active');
-        });
-
-        // Tambahkan active ke item yang diklik
-        item.classList.add('active');
-    });
-});
 
 
 
     </script>
 </body>
 </html>
+
